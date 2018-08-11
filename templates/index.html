@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Reminder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form>
+    Enter the following the data:
+    <p>{{count}}</p>
+    <ul>
+      {% for school in schools %}
+      <p>{{ school.school_name }}</p>
+      {% endfor %}
+    </ul>
+    <br>
+    Name
+    <br>
+    <input type="text" name ="firstname"><br><br>
+    Description
+    <br>
+    <input type="text" name ="description"><br><br>
+  </form>
+  <button onClick="function">Submit</button>
+  <script src="script.js"></script>
+</body>
+</html>
